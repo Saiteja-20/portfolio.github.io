@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li,p{
+                font-size: 25px;
+                
+            }
+            h1{
+                background-color: ;
+            }
+            img{
+                border: 7px ridge black;
+                
+            }
+            button{
+                background-color: brown;
+                color: whitesmoke;
+            }
+        </style>
+    </head>
+    <body background="17.jpg">
+     <div><font size="6"><h1 align="center"><b style=" background-color: whitesmoke; ">IOT BASED WATER QUALITY MONITORING SYSTEM</b></h1></font></div>
+        <div>
+            <font size="4.5"><h2>INTRODUCTION</h2></font>
+            <ul><li>Water pollution is one of the biggest fears for the green globalization.</li><li>. In order to ensure the safe supply of the
+                drinking water the quality needs to be monitor in real time.</li><li>The
+                    system consist of several sensors is used to measuring physical and chemical parameters of the water.</li><li>The
+                        parameters such as temperature, PH, turbidity, flow sensor of the water can be measured.</li><li>The measured
+                            values from the sensors can be processed by the core controller.</li><li>The esp32 model can be used as a core
+                                controller. Finally, the sensor data can be viewed on internet using WI-FI system.
+                                </li></ul>
+        </div><br>
+        <div>
+            <font size="4.5"><h2>HARDWARE COMPONENTS</h2></font>
+        </div>
+        <div>
+            <ul><li><a href="#mic">ESP32 Microcontroller
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li><a href="#ph">pH Sensor
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li><a href="#turb">Turbidity sensor
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li><a href="#soil">Soil moisture sensor
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li><a href="#temp">Temperature sensor
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li><a href="#pow">Power supply
+            </a></li></ul>
+        </div><br>
+        <div>
+            <h1 id="mic">ESP32 Microcontroller :</h1>
+            <center><img height="400" width="400" src="microcontroller.png" alt="" align="center"></center>
+            <ul><li>ESP32 is a System on Chip (SoC) 32-bit microcontroller with integrated Wi-Fi + Bluetooth + BLE features that targets a wide range of applications. It is a series of low-power and low-cost developed by Espressif Systems.
+            </li>
+            <li>Single or Dual-Core 32-bit  Microprocessor with clock frequency up to 240 MHz.
+            </li>
+            <li>520 KB of SRAM, 448 KB of ROM and 16 KB of RTC SRAM.
+            </li>
+            <li>Supports 802.11Wi-Fi connectivity with speeds up to 150 Mbps.
+            </li><li>Operating Frequency is 240 MHz and Operating Voltage is 3.3V
+                </li></ul>
+        </div>
+        <div>
+            <h1 id="ph">pH Sensor :</h1>
+            <center><img height="300" width="300" src="ph.png" alt="" align="center"></center>
+            <ul><li>The pH of a solution is the measure of the acidity or alkalinity of that solution.</li>
+            <li>The pH scale is a logarithmic scale whose range is from 0-14 with a neutral point being 7.</li>
+            <li>Values above 7 indicate a basic or alkaline solution and values below 7 would indicate an acidic solution.</li>
+            <li>It operates on 5V power supply and it is easy to interface with microcontroller.</li></ul>
+        </div>
+        <div>
+            <h1 id="turb">Turbidity sensor :</h1>
+            <center><img height="300" width="300" src="turbidity.png" alt="" align="center"></center>
+            <ul><li>The sensor operates on the principle that when light is passed through a sample of water.</li>
+            <li>The amount of light transmitted through the sample is dependent on the amount of soil in the water.</li>
+            <li>As the soil level increases, the amount of transmitted light decreases.</li></ul>
+        </div>
+        <div>
+            <h1 id="soil">Soil moisture sensor :</h1>
+            <center><img height="300" width="300" src="soil moisture.png" alt="" align="center"></center>
+            <ul><li>Soil moisture sensors measure the water content in the soil and can be used to estimate the amount of stored water in the soil horizon.</li>
+            <li>Soil moisture sensors do not measure water in the soil directly.</li>
+            <li>Instead, they measure changes in some other soil property that is related to water content in a predictable way.</li></ul>
+        </div>
+        <div>
+            <h1 id="temp">Temperature sensor :</h1>
+            <center><img height="300" width="300" src="temperature.png" alt="" align="center"></center>
+            <ul><li>Water Temperature indicates how water is hot or cold.</li>
+            <li>The range of DS18B20 temperature sensor is -55 to +125°C.</li>
+            <li>This temperature sensor is digital type which gives accurate reading.</li></ul>
+        </div>
+        <div>
+            <h1 id="pow">Power supply :</h1>
+            <center><img height="300" width="300" src="battery.png" alt="" align="center"></center>
+            <ul><li>A Battery is a source of electric power consisting of one or more electrochemical cells with external connections for powering electrical devices.</li>
+            <li>When a battery is supplying power, its positive terminal is the cathode and its negative terminal is the anode.</li>
+            <li>The terminal marked negative is the source of electrons that will flow through an external electric circuit to the positive terminal.</li></ul>
+        </div>
+        <div>
+            <font size="4.5"><h2>SOFTWARE COMPONENTS</h2></font>
+        </div>
+        <div>
+            <ul><li>ARDUINO IDE
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li>EMBEDDED C
+            </a></li></ul>
+        </div>
+        <div>
+            <ul><li>BYLNK  APP
+            </a></li></ul>
+        </div>
+        <div>
+            <h1>ARDUINO IDE :</h1>
+            <ul><li>The Arduino Integrated Development Environment - or Arduino Software (IDE) - contains a text editor for writing code, a message area, a text console, a toolbar with buttons for common functions and a series of menus.</li>
+            <li>It connects to the Arduino hardware to upload programs and communicate with them.</li>
+            <li>Programs written using Arduino Software (IDE) are called sketches. These sketches are written in the text editor and are saved with the file extension .ino.</li></ul>
+        </div>
+        <div>
+            <h1>EMBEDDED C :</h1>
+            <ul><li>Embedded C is an extension of C language and it is used to develop micro-controller based applications.</li>
+            <li>The extensions in the Embedded C language from normal C Programming Language is the I/O Hardware Addressing, fixed-point arithmetic operations, accessing address spaces, etc.</li></ul>
+        </div>
+        <div>
+            <h1>BYLNK  APP :</h1>
+            <ul><li>Blynk is an IoT platform for iOS or Android smartphones that is used to control Arduino, Raspberry Pi and NodeMCU via the Internet.</li>
+            <li>This application is used to create a graphical interface or human machine interface (HMI) by compiling and providing the appropriate address on the available widgets.</li>
+            <li>Blynk App - allows to you create amazing interfaces for your projects using various widgets we provide GUI(Graphical user interface).</li></ul>
+        </div>
+        <div>
+            <font size="4.5"><h2>WORKING</h2></font>
+            <ul><li>The whole design of the system is based mainly on IOT which is newly introduced concept in the world of development. There is basically two parts included, the first one is hardware & second one is software.</li>
+            <li>The hardware part has sensors which help to measure the real time values, another one is ESP32 converts the analog values to digital one, & smartphone shows the displays output from sensors, Wi-Fi module gives the connection between hardware and software.</li>
+            <li>In software we developed a program based on embedded c language. The PCB is design at first level of construction and component and sensors mounted on it.</li>
+            <li>BLYNK app is installed in the android version to see the output. When the system get started dc current given to the kit and Arduino  and WIFI gets on.</li>
+            <li>The parameters of water is tested one but one and their result is given to display. The app went provided with hotspot gives the exact value as on display shows on kit.</li><li>Thus like this when the kit is located on any specific water body and WIFI is provided we can observe its real time value on our android phone anywhere at any time.</li></ul>
+        </div>
+        <div>
+            <font size="4.5"><h2>ADVANTAGES</h2></font>
+            <ul><li>It will reduce the time to measure the parameters.</li>
+            <li>This is economically affordable for common people.</li>
+            <li>Water quality monitoring system is used to alert us to current, ongoing and emerging problems.</li></ul>
+        </div>
+        <div>
+            <font size="4.5"><h2>APPLICATIONS</h2></font>
+            <ul><li>Agriculture</li>
+            <li>Water Utilities</li>
+            <li>Aquaculture</li></ul>
+        </div>
+        <div>
+            <font size="4.5"><h2>CONCLUSION</h2></font>
+            <p>Monitoring of Turbidity, PH & Temperature of Water makes use of water detection sensor with unique 
+                advantage and existing GSM network. The system can monitor water quality automatically, and it is low in cost
+                 and does not require people on duty. So the water quality testing is likely to be more economical, convenient
+                  and fast. The system has good flexibility. Only by replacing the corresponding sensors and changing the relevant 
+                  software programs, this system can be used to monitor other water quality parameters. The operation is simple. 
+                  The system can be expanded to monitor hydrologic, air pollution, industrial and agricultural production and so on. 
+                  It has widespread application and extension value.</p>
+        </div>
+        <a href="EDUCATION.HTML"><button>PREVIOUS</button></a>
+        <a href="CERTIFICATES.HTML"><button style="margin-left: 90%;">NEXT</button></a>
+    </body>
+</html>
